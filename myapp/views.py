@@ -3,27 +3,26 @@ from django.http import HttpResponse, JsonResponse
 from .models import Project, Task
 
 # Create your views here.
+def login(request):
+    return render(request,"login.html",{})
 def index(request):
     return render(request,"index.html")
-def e404(request):
-    return render(request,"404.html")
-def e401(request):
-    return render(request,"401.html")
-def e500(request):
-    return render(request,"500.html")
+def asesorias(request):
+    return render(request,"asesorias.html")
+def charlasOV(request):
+    return render(request,"charlasOV.html")
 def charts(request):
     return render(request,"charts.html")
-def layoudsidenav(request):
-    return render(request,"layoud-sidenav-ligth.html")
-def layoudstatic(request):
-    return render(request,"layoud-static.html")
-def login(request):
-    return render(request,"login.html")
-def password(request):
-    return render (request,"password.html")
-def register(request):
-    return render (request,"register.html")
+def defineTuFuturo(request):
+    return render (request,"defineTuFuturo.html")
+def seguimientoCienciasBasicas(request):
+    return render (request,"seguimientoCienciasBasicas.html")
+def seguimientoNivelacion(request):
+    return render (request,"seguimientoNivelacion.html")
 def tables(request):
     return render (request,"tables.html")
-
+def talleres(request):
+    return render(request,"talleres.html")
+def search (request):
+    return render (request,"search.html")
 

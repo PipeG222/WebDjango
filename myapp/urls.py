@@ -1,15 +1,16 @@
 from django.urls import path
 from . import views
 urlpatterns=[
-    path('', views.login, name='login'),
+    path("", views.login, name='login'),
     path('index.html/', views.index, name='index'),
-    path('401.html/', views.e401, name='e401'),
-    path('404.html/', views.e404, name='e404'),
-    path('500.html/', views.charts, name='charts'),
-    path('layoudsidenav.html/', views.layoudsidenav, name='layout_sidenav'),
-    path('layoudstatic.html/', views.layoudstatic, name='layout_static'),
-    path('password.html/', views.password, name='password'),
-    path('register.html/', views.register, name='register'),
+    path('asesorias.html/', views.asesorias, name='asesorias'),
+    path('charlasOV.html/', views.charlasOV, name='charlasOV'),
+    path('charts.html/', views.charts, name='charts'),
+    path('defineTuFuturo.html/', views.defineTuFuturo, name='defineTuFuturo'),
+    path('seguimientoCienciasBasicas.html/', views.seguimientoCienciasBasicas, name='seguimientoCienciasBasicas'),
+    path('seguimientoNivelacion.html/', views.seguimientoNivelacion, name='seguimientoNivelacion'),
     path('tables.html/', views.tables, name='tables'),
+    path('talleres.html/', views.talleres, name='talleres'),
+    path('search.html/', views.search, name='search'),
 
 ]
